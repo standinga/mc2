@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/michal/repos/sobel1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/surricon.png",
+        "source": "/Users/michal/repos/sobel1/app/src/main/res/drawable-hdpi/surricon.png"
+    },
+    {
+        "merged": "/Users/michal/repos/sobel1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png",
+        "source": "/Users/michal/repos/sobel1/app/src/main/res/drawable-hdpi/icon.png"
+    }
+]

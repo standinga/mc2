@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "co.borama.mirrorcoach"
+        minSdkVersion 7
+        targetSdkVersion 7
+
+        ndk {
+            moduleName "mirrorcoach"
+            ldLibs = ["log", "android", "jnigraphics"]
+//            cFlags "-O3"
+
+        }
+    }
+
+//    sourceSets.main {
+//
+//        jni.srcDirs = [] //ndk-build.cmd needs to be invokded from command line
+//        jniLibs.srcDir 'src/main/libs' // android studio will look in this folder
+//    }
+//
+//    task ndkBuild(type: Exec) {
+//        commandLine '/Users/michal/Library/Android/sdk/ndk-bundle/ndk-build', '-C', file('src/main/jni').absolutePath
+//
+//    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
